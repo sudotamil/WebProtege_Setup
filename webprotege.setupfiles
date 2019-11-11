@@ -1,0 +1,41 @@
+WebProtege code setup:
+
+download the latest file from following :  
+1.  https://github.com/protegeproject/webprotege/releases
+download : webprotege-3.0.0-cli.jar
+
+Give Full permission to following path --> /var/log/webprotege
+Run the following command and proceed further:
+java -jar webprotege-3.0.0-cli.jar create-admin-account
+
+
+download : webprotege-3.0.0.war
+moved to tomcat webapps and restart the server..
+then give full permission to this folder (  webprotege-3.0.0 )
+create folder name like --> /srv/webprotege ( antwhere on the system)
+
+And edit the webprotege.properties file ( webapps/webprotege-3.0.0/WEB-INF/classes/)
+set the data.directory == pathtofolder/srv/webprotege
+
+Restart the server
+
+http://localhost:8080/webprotege-3.0.0/#application/settings
+
+ configure the application settings 
+ Application Name = Userdefined
+ email address = userdefined
+ host = localhost / userdefined
+ 
+ Global Permission :
+ Give full permission
+ 
+ Apply --> OK
+ 
+Restart the server
+
+DONE!!!!!
+
+
+
+
+
